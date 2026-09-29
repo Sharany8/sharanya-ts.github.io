@@ -1,0 +1,1743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+
+  <!-- Basic SEO -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#08111f" />
+  <meta name="author" content="Sharanya T S" />
+  <meta
+    name="description"
+    content="Portfolio of Sharanya T S, a Computer Science and Engineering student specializing in Python, machine learning, data processing, and software development."
+  />
+  <meta
+    name="keywords"
+    content="Sharanya T S, Computer Science student, Python developer, machine learning, data analysis, software developer, portfolio"
+  />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://your-domain.example/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Sharanya T S | Computer Science Engineer" />
+  <meta
+    property="og:description"
+    content="Computer Science and Engineering student experienced in Python, data processing, machine learning, and practical software engineering."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://your-domain.example/" />
+  <meta property="og:image" content="https://your-domain.example/preview.png" />
+  <meta property="og:image:alt" content="Sharanya T S portfolio preview" />
+  <meta property="og:site_name" content="Sharanya T S Portfolio" />
+
+  <!-- Twitter/X Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Sharanya T S | Computer Science Engineer" />
+  <meta
+    name="twitter:description"
+    content="Portfolio of Sharanya T S, a Computer Science and Engineering student specializing in Python, machine learning, and data analysis."
+  />
+  <meta name="twitter:image" content="https://your-domain.example/preview.png" />
+
+  <!-- Security policy for this static page -->
+  <meta
+    http-equiv="Content-Security-Policy"
+    content="default-src 'self'; img-src 'self' https: data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; connect-src 'self' https://api.web3forms.com;"
+  />
+
+  <title>Sharanya T S | Computer Science Engineer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    :root {
+      --bg: #08111f;
+      --bg-soft: #0e1c30;
+      --surface: rgba(18, 35, 57, 0.76);
+      --surface-solid: #11243d;
+      --text: #f3f8ff;
+      --muted: #a9b8cb;
+      --primary: #4de1d2;
+      --secondary: #72a7ff;
+      --border: rgba(160, 190, 220, 0.16);
+      --danger: #ff7f91;
+      --success: #5ee6a7;
+      --shadow: 0 24px 70px rgba(0, 0, 0, 0.3);
+      --radius: 22px;
+      --transition: 250ms ease;
+    }
+
+    body.light {
+      --bg: #f4f8fc;
+      --bg-soft: #e9f1f8;
+      --surface: rgba(255, 255, 255, 0.86);
+      --surface-solid: #ffffff;
+      --text: #132238;
+      --muted: #5f7083;
+      --primary: #087f83;
+      --secondary: #346fd1;
+      --border: rgba(17, 48, 82, 0.14);
+      --shadow: 0 24px 70px rgba(25, 65, 100, 0.12);
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 86px;
+    }
+
+    body {
+      min-width: 320px;
+      margin: 0;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 85% 5%, rgba(77, 225, 210, 0.12), transparent 28rem),
+        radial-gradient(circle at 5% 30%, rgba(114, 167, 255, 0.11), transparent 28rem),
+        var(--bg);
+      font-family: Inter, sans-serif;
+      line-height: 1.6;
+      transition:
+        background var(--transition),
+        color var(--transition);
+    }
+
+    body,
+    .site-header,
+    .card,
+    input,
+    textarea,
+    .mobile-menu {
+      transition:
+        background var(--transition),
+        color var(--transition),
+        border-color var(--transition),
+        box-shadow var(--transition);
+    }
+
+    body.menu-open {
+      overflow: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button,
+    input,
+    textarea {
+      font: inherit;
+    }
+
+    button,
+    a {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    :focus-visible {
+      outline: 3px solid var(--primary);
+      outline-offset: 3px;
+    }
+
+    .container {
+      width: min(1120px, calc(100% - 40px));
+      margin-inline: auto;
+    }
+
+    .section {
+      padding: 100px 0;
+    }
+
+    .section-heading {
+      max-width: 700px;
+      margin-bottom: 42px;
+    }
+
+    .eyebrow {
+      margin: 0 0 12px;
+      color: var(--primary);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    h3 {
+      margin: 0;
+      font-family: "Space Grotesk", sans-serif;
+      line-height: 1.15;
+    }
+
+    h1 {
+      max-width: 780px;
+      font-size: clamp(2.8rem, 8vw, 5.7rem);
+      letter-spacing: -0.07em;
+    }
+
+    h2 {
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      letter-spacing: -0.045em;
+    }
+
+    h3 {
+      font-size: 1.3rem;
+    }
+
+    .gradient-text {
+      color: transparent;
+      background: linear-gradient(100deg, var(--primary), var(--secondary));
+      background-clip: text;
+      -webkit-background-clip: text;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .skip-link {
+      position: fixed;
+      z-index: 100;
+      top: 10px;
+      left: 10px;
+      padding: 10px 14px;
+      border-radius: 8px;
+      color: #06151b;
+      background: var(--primary);
+      transform: translateY(-150%);
+    }
+
+    .skip-link:focus {
+      transform: translateY(0);
+    }
+
+    /* Navigation */
+    .site-header {
+      position: sticky;
+      z-index: 50;
+      top: 0;
+      border-bottom: 1px solid var(--border);
+      background: color-mix(in srgb, var(--bg) 84%, transparent);
+      backdrop-filter: blur(18px);
+    }
+
+    .nav {
+      min-height: 74px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-family: "Space Grotesk", sans-serif;
+      font-weight: 700;
+    }
+
+    .logo-mark {
+      width: 37px;
+      height: 37px;
+      display: grid;
+      place-items: center;
+      border-radius: 12px;
+      color: #07151c;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      font-weight: 800;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .nav-links a {
+      position: relative;
+      padding: 8px 0;
+      transition: color var(--transition);
+    }
+
+    .nav-links a::after {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: 2px;
+      content: "";
+      background: var(--primary);
+      transform: scaleX(0);
+      transform-origin: center;
+      transition: transform var(--transition);
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: var(--primary);
+    }
+
+    .nav-links a.active::after,
+    .nav-links a:hover::after {
+      transform: scaleX(1);
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .icon-button {
+      width: 40px;
+      height: 40px;
+      display: grid;
+      place-items: center;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      color: var(--text);
+      background: var(--surface);
+      cursor: pointer;
+      transition: transform var(--transition), border-color var(--transition);
+    }
+
+    .icon-button:hover {
+      border-color: var(--primary);
+      transform: translateY(-2px);
+    }
+
+    .menu-toggle {
+      display: none;
+    }
+
+    /* Hero */
+    .hero {
+      min-height: calc(100vh - 74px);
+      display: flex;
+      align-items: center;
+      padding: 100px 0 80px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .hero-copy > p:not(.eyebrow) {
+      max-width: 650px;
+      margin: 24px 0 32px;
+      color: var(--muted);
+      font-size: 1.08rem;
+    }
+
+    .button-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 13px;
+    }
+
+    .button {
+      min-height: 48px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      padding: 0 19px;
+      border: 1px solid transparent;
+      border-radius: 13px;
+      cursor: pointer;
+      font-weight: 700;
+      transition:
+        transform var(--transition),
+        box-shadow var(--transition),
+        background var(--transition);
+    }
+
+    .button:hover {
+      transform: translateY(-3px);
+    }
+
+    .button-primary {
+      color: #06151b;
+      background: var(--primary);
+      box-shadow: 0 12px 30px rgba(77, 225, 210, 0.2);
+    }
+
+    .button-secondary {
+      border-color: var(--border);
+      color: var(--text);
+      background: var(--surface);
+    }
+
+    .button:disabled {
+      cursor: not-allowed;
+      opacity: 0.7;
+      transform: none;
+    }
+
+    .hero-card {
+      position: relative;
+      min-height: 370px;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      border-radius: 32px;
+      background:
+        linear-gradient(145deg, rgba(77, 225, 210, 0.15), transparent 45%),
+        var(--surface);
+      box-shadow: var(--shadow);
+    }
+
+    .hero-card::before,
+    .hero-card::after {
+      position: absolute;
+      border: 1px solid rgba(77, 225, 210, 0.25);
+      border-radius: 50%;
+      content: "";
+    }
+
+    .hero-card::before {
+      width: 310px;
+      height: 310px;
+    }
+
+    .hero-card::after {
+      width: 220px;
+      height: 220px;
+    }
+
+    .profile-orbit {
+      position: relative;
+      z-index: 1;
+      width: 155px;
+      height: 155px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      color: #07151c;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      box-shadow: 0 0 0 14px rgba(77, 225, 210, 0.08), 0 0 70px rgba(77, 225, 210, 0.3);
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 3.2rem;
+      font-weight: 800;
+    }
+
+    .floating-label {
+      position: absolute;
+      z-index: 2;
+      padding: 9px 13px;
+      border: 1px solid var(--border);
+      border-radius: 11px;
+      color: var(--muted);
+      background: var(--surface-solid);
+      box-shadow: var(--shadow);
+      font-size: 0.78rem;
+      font-weight: 600;
+    }
+
+    .label-one {
+      top: 25%;
+      left: 8%;
+    }
+
+    .label-two {
+      right: 7%;
+      bottom: 27%;
+    }
+
+    /* Cards and content */
+    .card {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--surface);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(14px);
+    }
+
+    .about-grid,
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    .about-card,
+    .education-card,
+    .contact-card {
+      padding: 30px;
+    }
+
+    .about-card p,
+    .contact-copy > p {
+      margin-top: 18px;
+      color: var(--muted);
+    }
+
+    .chips,
+    .tech-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+    }
+
+    .chips {
+      margin-top: 24px;
+    }
+
+    .chip,
+    .tech-tag {
+      padding: 8px 12px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      color: var(--muted);
+      background: rgba(114, 167, 255, 0.07);
+      font-size: 0.82rem;
+    }
+
+    .education-card {
+      background:
+        linear-gradient(145deg, rgba(114, 167, 255, 0.12), transparent),
+        var(--surface);
+    }
+
+    .education-card .date {
+      display: inline-block;
+      margin: 15px 0;
+      color: var(--primary);
+      font-size: 0.84rem;
+      font-weight: 700;
+    }
+
+    .education-card p {
+      color: var(--muted);
+    }
+
+    /* Skills */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .skill-card,
+    .project-card {
+      transition:
+        transform var(--transition),
+        border-color var(--transition);
+    }
+
+    .skill-card {
+      padding: 26px;
+    }
+
+    .skill-card:hover,
+    .project-card:hover {
+      border-color: rgba(77, 225, 210, 0.48);
+      transform: translateY(-7px);
+    }
+
+    .skill-icon {
+      width: 45px;
+      height: 45px;
+      display: grid;
+      place-items: center;
+      margin-bottom: 20px;
+      border-radius: 14px;
+      color: var(--primary);
+      background: rgba(77, 225, 210, 0.1);
+      font-size: 1.3rem;
+    }
+
+    .skill-card ul,
+    .project-card ul {
+      margin: 18px 0 0;
+      padding-left: 19px;
+      color: var(--muted);
+    }
+
+    .skill-card li,
+    .project-card li {
+      margin-bottom: 8px;
+    }
+
+    /* Projects */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    .project-card {
+      display: flex;
+      flex-direction: column;
+      padding: 28px;
+    }
+
+    .project-number {
+      color: var(--primary);
+      font-family: "Space Grotesk", sans-serif;
+      font-weight: 700;
+    }
+
+    .project-card h3 {
+      margin: 15px 0 12px;
+    }
+
+    .project-card > p {
+      color: var(--muted);
+    }
+
+    .project-card .tech-tags {
+      margin: 23px 0;
+    }
+
+    .project-links {
+      display: flex;
+      gap: 18px;
+      margin-top: auto;
+      padding-top: 10px;
+      color: var(--primary);
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+
+    .project-links a:hover {
+      text-decoration: underline;
+    }
+
+    /* Certifications */
+    .cert-list {
+      display: grid;
+      gap: 14px;
+    }
+
+    .cert-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      padding: 20px;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      background: var(--surface);
+    }
+
+    .cert-badge {
+      min-width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border-radius: 12px;
+      color: #07151c;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      font-weight: 800;
+    }
+
+    .cert-item p {
+      margin: 5px 0 0;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    /* Contact form */
+    .contact-details {
+      display: grid;
+      gap: 14px;
+      margin-top: 28px;
+    }
+
+    .contact-detail {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      color: var(--muted);
+    }
+
+    .contact-detail > span {
+      width: 40px;
+      height: 40px;
+      display: grid;
+      place-items: center;
+      border-radius: 12px;
+      color: var(--primary);
+      background: rgba(77, 225, 210, 0.1);
+    }
+
+    .contact-detail a:hover {
+      color: var(--primary);
+    }
+
+    .contact-form {
+      display: grid;
+      gap: 16px;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    label {
+      display: grid;
+      gap: 8px;
+      color: var(--muted);
+      font-size: 0.84rem;
+      font-weight: 600;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 13px 14px;
+      outline: none;
+      color: var(--text);
+      background: var(--bg-soft);
+    }
+
+    input:focus,
+    textarea:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(77, 225, 210, 0.12);
+    }
+
+    textarea {
+      min-height: 130px;
+      resize: vertical;
+    }
+
+    .field-error {
+      min-height: 18px;
+      color: var(--danger);
+      font-size: 0.78rem;
+      font-weight: 500;
+    }
+
+    .form-alert {
+      display: none;
+      padding: 12px 14px;
+      border-radius: 12px;
+      font-size: 0.88rem;
+    }
+
+    .form-alert.show {
+      display: block;
+    }
+
+    .form-alert.success {
+      color: var(--success);
+      background: rgba(94, 230, 167, 0.1);
+    }
+
+    .form-alert.error {
+      color: var(--danger);
+      background: rgba(255, 127, 145, 0.1);
+    }
+
+    .spinner {
+      width: 16px;
+      height: 16px;
+      display: none;
+      border: 2px solid currentColor;
+      border-right-color: transparent;
+      border-radius: 50%;
+      animation: spin 0.7s linear infinite;
+    }
+
+    .is-loading .spinner {
+      display: inline-block;
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    /* Deployment section */
+    .deployment-card {
+      padding: 28px;
+    }
+
+    .deployment-card ol {
+      margin: 18px 0 0;
+      padding-left: 22px;
+      color: var(--muted);
+    }
+
+    .deployment-card li {
+      margin-bottom: 10px;
+    }
+
+    code {
+      padding: 2px 6px;
+      border-radius: 5px;
+      color: var(--primary);
+      background: rgba(77, 225, 210, 0.08);
+      font-family: monospace;
+    }
+
+    /* Footer */
+    footer {
+      padding: 28px 0;
+      border-top: 1px solid var(--border);
+    }
+
+    .footer-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 15px;
+    }
+
+    .social-links a:hover {
+      color: var(--primary);
+    }
+
+    /* Scroll reveal */
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition:
+        opacity 700ms ease,
+        transform 700ms ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+
+      .reveal {
+        opacity: 1;
+        transform: none;
+      }
+    }
+
+    @media (max-width: 850px) {
+      .hero-grid,
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding-top: 70px;
+      }
+
+      .hero-card {
+        min-height: 300px;
+      }
+
+      .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 650px) {
+      .container {
+        width: min(100% - 28px, 1120px);
+      }
+
+      .section {
+        padding: 72px 0;
+      }
+
+      .menu-toggle {
+        display: grid;
+      }
+
+      .nav-links {
+        position: fixed;
+        z-index: 60;
+        top: 74px;
+        right: 14px;
+        left: 14px;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 10px;
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        background: var(--surface-solid);
+        box-shadow: var(--shadow);
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-12px);
+        transition:
+          opacity var(--transition),
+          transform var(--transition);
+      }
+
+      .nav-links.open {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0);
+      }
+
+      .nav-links a {
+        display: block;
+        padding: 12px;
+      }
+
+      .hero {
+        min-height: auto;
+        padding: 78px 0 55px;
+      }
+
+      .hero-card {
+        min-height: 260px;
+      }
+
+      .skills-grid,
+      .projects-grid,
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+
+      .about-card,
+      .education-card,
+      .contact-card,
+      .project-card,
+      .skill-card {
+        padding: 23px;
+      }
+
+      .footer-content {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
+  </style>
+
+  <!-- Structured data for search engines -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Sharanya T S",
+      "jobTitle": "Computer Science and Engineering Student",
+      "email": "mailto:tssharanya775@gmail.com",
+      "telephone": "+91 9035030087",
+      "url": "https://your-domain.example/",
+      "sameAs": [
+        "https://www.linkedin.com/in/sharanya-t-s-556b1534b/",
+        "https://github.com/"
+      ],
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Alva's Institute of Engineering and Technology"
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="logo" href="#home" aria-label="Sharanya T S home">
+        <span class="logo-mark" aria-hidden="true">S</span>
+        <span>Sharanya T S</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Achievements</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button
+          class="icon-button"
+          id="themeToggle"
+          type="button"
+          aria-label="Switch to light mode"
+          title="Toggle theme"
+        >
+          ☀
+        </button>
+
+        <button
+          class="icon-button menu-toggle"
+          id="menuToggle"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="navLinks"
+        >
+          ☰
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Computer Science & Engineering Student</p>
+
+          <h1>
+            Building practical solutions with
+            <span class="gradient-text">code and data.</span>
+          </h1>
+
+          <p>
+            I’m Sharanya T S, a Computer Science student experienced in Python,
+            data processing, machine learning, and practical software
+            engineering.
+          </p>
+
+          <div class="button-row">
+            <a class="button button-primary" href="#projects">
+              View Projects <span aria-hidden="true">↗</span>
+            </a>
+
+            <a class="button button-secondary" href="#contact">
+              Contact Me <span aria-hidden="true">→</span>
+            </a>
+
+            <a
+              class="button button-secondary"
+              href="resume.pdf"
+              download="Sharanya-T-S-Resume.pdf"
+            >
+              Download Resume <span aria-hidden="true">↓</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-card reveal" aria-label="Sharanya T S initials graphic">
+          <span class="floating-label label-one">Python + ML</span>
+          <span class="floating-label label-two">Problem Solver</span>
+          <div class="profile-orbit" aria-hidden="true">STS</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">01 / About me</p>
+          <h2>Curious mind. Practical builder.</h2>
+        </div>
+
+        <div class="about-grid">
+          <article class="card about-card reveal">
+            <h3>Professional Summary</h3>
+            <p>
+              Computer Science student with practical experience in Python,
+              data processing, machine learning, and software projects. I enjoy
+              transforming ideas into functional, understandable, and useful
+              solutions.
+            </p>
+
+            <div class="chips" aria-label="Soft skills">
+              <span class="chip">Problem Solving</span>
+              <span class="chip">Analytical Thinking</span>
+              <span class="chip">Communication</span>
+              <span class="chip">Teamwork</span>
+              <span class="chip">Adaptability</span>
+              <span class="chip">Time Management</span>
+            </div>
+          </article>
+
+          <article class="card education-card reveal">
+            <p class="eyebrow">Education</p>
+            <h3>B.E. in Computer Science and Engineering</h3>
+            <span class="date">2024 – Present</span>
+            <p>Alva's Institute of Engineering and Technology</p>
+            <p style="margin-top: 18px">
+              Building a strong foundation in programming, software
+              engineering, data structures, analytics, and machine learning.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">02 / Technical skills</p>
+          <h2>Tools I use to turn ideas into outcomes.</h2>
+        </div>
+
+        <div class="skills-grid">
+          <article class="card skill-card reveal">
+            <div class="skill-icon" aria-hidden="true">⌘</div>
+            <h3>Programming</h3>
+            <ul>
+              <li>Python</li>
+              <li>Java</li>
+              <li>SQL</li>
+              <li>HTML and CSS</li>
+            </ul>
+          </article>
+
+          <article class="card skill-card reveal">
+            <div class="skill-icon" aria-hidden="true">⌘</div>
+            <h3>Tools</h3>
+            <ul>
+              <li>Git</li>
+              <li>GitHub</li>
+              <li>Version control</li>
+              <li>Project collaboration</li>
+            </ul>
+          </article>
+
+          <article class="card skill-card reveal">
+            <div class="skill-icon" aria-hidden="true">◈</div>
+            <h3>Data & Machine Learning</h3>
+            <ul>
+              <li>Data processing</li>
+              <li>Data analysis</li>
+              <li>Machine learning</li>
+              <li>Image recognition</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">03 / Selected projects</p>
+          <h2>Learning by building real solutions.</h2>
+        </div>
+
+        <div class="projects-grid">
+          <article class="card project-card reveal">
+            <span class="project-number">01 — Python / Computer Vision</span>
+            <h3>Image Recognition Using Python</h3>
+            <p>
+              Developed an image processing and recognition project using
+              Python libraries to analyze and identify visual information.
+            </p>
+
+            <ul>
+              <li>Implemented image recognition library functions.</li>
+              <li>Tested and evaluated recognition workflows.</li>
+              <li>Focused on practical image-processing results.</li>
+            </ul>
+
+            <div class="tech-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Image Recognition</span>
+              <span class="tech-tag">Data Processing</span>
+            </div>
+
+            <div class="project-links">
+              <a
+                href="https://github.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub repository ↗
+              </a>
+
+              <a
+                href="https://example.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Project demo ↗
+              </a>
+            </div>
+          </article>
+
+          <article class="card project-card reveal">
+            <span class="project-number">02 — Machine Learning / Finance</span>
+            <h3>Stock Prediction — Multimodel Approach</h3>
+            <p>
+              Created a stock price prediction model using a multi-model
+              machine learning approach and historical stock datasets.
+            </p>
+
+            <ul>
+              <li>Processed and prepared historical stock data.</li>
+              <li>Compared prediction outputs across models.</li>
+              <li>Evaluated model performance and results.</li>
+            </ul>
+
+            <div class="tech-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Machine Learning</span>
+              <span class="tech-tag">Data Analysis</span>
+            </div>
+
+            <div class="project-links">
+              <a
+                href="https://github.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub repository ↗
+              </a>
+
+              <a
+                href="https://example.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Project demo ↗
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="certifications">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">04 / Certifications & achievements</p>
+          <h2>Growing through continuous learning.</h2>
+        </div>
+
+        <div class="cert-list">
+          <article class="cert-item reveal">
+            <div class="cert-badge" aria-hidden="true">✓</div>
+            <div>
+              <h3>Data Processing and Analysis</h3>
+              <p>Certification completed through Udemy.</p>
+            </div>
+          </article>
+
+          <article class="cert-item reveal">
+            <div class="cert-badge" aria-hidden="true">✓</div>
+            <div>
+              <h3>Coursera Certification</h3>
+              <p>Completed a professional learning certification through Coursera.</p>
+            </div>
+          </article>
+
+          <article class="cert-item reveal">
+            <div class="cert-badge" aria-hidden="true">★</div>
+            <div>
+              <h3>Machine Learning & Image Recognition Projects</h3>
+              <p>
+                Successfully developed functional outputs and evaluated
+                multi-model approaches for practical projects.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">05 / Get in touch</p>
+          <h2>Let’s build something useful.</h2>
+        </div>
+
+        <div class="contact-grid">
+          <article class="card contact-card contact-copy reveal">
+            <h3>Have a project or opportunity?</h3>
+            <p>
+              I’m open to connecting, learning, and discussing opportunities
+              related to software development, data, and machine learning.
+            </p>
+
+            <div class="contact-details">
+              <div class="contact-detail">
+                <span aria-hidden="true">✉</span>
+                <a href="mailto:tssharanya775@gmail.com">
+                  tssharanya775@gmail.com
+                </a>
+              </div>
+
+              <div class="contact-detail">
+                <span aria-hidden="true">☎</span>
+                <a href="tel:+919035030087">+91 9035030087</a>
+              </div>
+
+              <div class="contact-detail">
+                <span aria-hidden="true">in</span>
+                <a
+                  href="https://www.linkedin.com/in/sharanya-t-s-556b1534b/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  LinkedIn profile
+                </a>
+              </div>
+
+              <div class="contact-detail">
+                <span aria-hidden="true">GH</span>
+                <a
+                  href="https://github.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub profile
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card contact-card reveal">
+            <form id="contactForm" class="contact-form" novalidate>
+              <!-- Replace this value with your Web3Forms access key -->
+              <input
+                type="hidden"
+                name="access_key"
+                value="YOUR_WEB3FORMS_ACCESS_KEY"
+              />
+
+              <input type="hidden" name="subject" value="New portfolio contact message" />
+              <input type="hidden" name="from_name" value="Sharanya T S Portfolio" />
+              <input type="hidden" name="botcheck" />
+
+              <div class="form-row">
+                <label for="name">
+                  Name
+                  <input
+                    id="name"
+                    name="name"
+                    type="text"
+                    autocomplete="name"
+                    placeholder="Your name"
+                    minlength="2"
+                    required
+                  />
+                  <span class="field-error" data-error-for="name"></span>
+                </label>
+
+                <label for="email">
+                  Email
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    autocomplete="email"
+                    placeholder="you@example.com"
+                    required
+                  />
+                  <span class="field-error" data-error-for="email"></span>
+                </label>
+              </div>
+
+              <label for="message">
+                Message
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Write your message..."
+                  minlength="10"
+                  required
+                ></textarea>
+                <span class="field-error" data-error-for="message"></span>
+              </label>
+
+              <div
+                id="formAlert"
+                class="form-alert"
+                role="alert"
+                aria-live="polite"
+              ></div>
+
+              <button id="submitButton" class="button button-primary" type="submit">
+                <span class="spinner" aria-hidden="true"></span>
+                <span class="button-text">Send Message</span>
+                <span aria-hidden="true">↗</span>
+              </button>
+            </form>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="deploy">
+      <div class="container">
+        <article class="card deployment-card reveal">
+          <p class="eyebrow">Deployment guide</p>
+          <h2>Deploy this portfolio for free.</h2>
+
+          <ol>
+            <li>
+              Save this file as <code>index.html</code> and place
+              <code>resume.pdf</code> in the same folder.
+            </li>
+            <li>
+              Update the canonical URL, Open Graph image URL, and structured
+              data URL with your real domain.
+            </li>
+            <li>
+              Replace <code>YOUR_WEB3FORMS_ACCESS_KEY</code> with your Web3Forms
+              access key.
+            </li>
+            <li>
+              For GitHub Pages, create a repository named
+              <code>your-username.github.io</code>, upload the files, and enable
+              Pages from the repository settings.
+            </li>
+            <li>
+              For Netlify, create an account, drag this folder onto Netlify
+              Drop, and your site will be published immediately.
+            </li>
+          </ol>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <p>
+        © <span id="year"></span> Sharanya T S. Built with HTML, CSS, and JavaScript.
+      </p>
+
+      <div class="social-links">
+        <a
+          href="https://www.linkedin.com/in/sharanya-t-s-556b1534b/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
+        <a
+          href="https://github.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
+        <a href="mailto:tssharanya775@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    "use strict";
+
+    const body = document.body;
+    const themeToggle = document.getElementById("themeToggle");
+    const menuToggle = document.getElementById("menuToggle");
+    const navLinks = document.getElementById("navLinks");
+    const contactForm = document.getElementById("contactForm");
+    const submitButton = document.getElementById("submitButton");
+    const formAlert = document.getElementById("formAlert");
+    const yearElement = document.getElementById("year");
+
+    yearElement.textContent = new Date().getFullYear();
+
+    /* Theme persistence */
+    const storedTheme = localStorage.getItem("portfolio-theme");
+    const systemPrefersLight = window.matchMedia(
+      "(prefers-color-scheme: light)"
+    ).matches;
+
+    if (storedTheme === "light" || (!storedTheme && systemPrefersLight)) {
+      body.classList.add("light");
+    }
+
+    function updateThemeButton() {
+      const isLight = body.classList.contains("light");
+
+      themeToggle.textContent = isLight ? "☾" : "☀";
+      themeToggle.setAttribute(
+        "aria-label",
+        isLight ? "Switch to dark mode" : "Switch to light mode"
+      );
+    }
+
+    updateThemeButton();
+
+    themeToggle.addEventListener("click", () => {
+      body.classList.toggle("light");
+
+      localStorage.setItem(
+        "portfolio-theme",
+        body.classList.contains("light") ? "light" : "dark"
+      );
+
+      updateThemeButton();
+    });
+
+    /* Mobile navigation drawer */
+    function closeMobileMenu() {
+      navLinks.classList.remove("open");
+      menuToggle.setAttribute("aria-expanded", "false");
+      menuToggle.setAttribute("aria-label", "Open navigation menu");
+      menuToggle.textContent = "☰";
+      body.classList.remove("menu-open");
+    }
+
+    menuToggle.addEventListener("click", () => {
+      const isOpen = navLinks.classList.toggle("open");
+
+      menuToggle.setAttribute("aria-expanded", String(isOpen));
+      menuToggle.setAttribute(
+        "aria-label",
+        isOpen ? "Close navigation menu" : "Open navigation menu"
+      );
+      menuToggle.textContent = isOpen ? "×" : "☰";
+      body.classList.toggle("menu-open", isOpen);
+    });
+
+    document.querySelectorAll(".nav-links a").forEach((link) => {
+      link.addEventListener("click", closeMobileMenu);
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") {
+        closeMobileMenu();
+      }
+    });
+
+    /* Active navigation link using IntersectionObserver */
+    const sections = document.querySelectorAll("main section[id]");
+    const navigationAnchors = document.querySelectorAll(".nav-links a");
+
+    const sectionObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+
+          navigationAnchors.forEach((anchor) => {
+            const isCurrent = anchor.getAttribute("href") === `#${entry.target.id}`;
+            anchor.classList.toggle("active", isCurrent);
+
+            if (isCurrent) {
+              anchor.setAttribute("aria-current", "page");
+            } else {
+              anchor.removeAttribute("aria-current");
+            }
+          });
+        });
+      },
+      {
+        rootMargin: "-35% 0px -55% 0px",
+        threshold: 0
+      }
+    );
+
+    sections.forEach((section) => sectionObserver.observe(section));
+
+    /* Scroll reveal animation */
+    const revealElements = document.querySelectorAll(".reveal");
+
+    const revealObserver = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        });
+      },
+      {
+        threshold: 0.12
+      }
+    );
+
+    revealElements.forEach((element) => revealObserver.observe(element));
+
+    /* Contact form validation */
+    const fields = {
+      name: {
+        element: document.getElementById("name"),
+        message: "Please enter at least 2 characters."
+      },
+      email: {
+        element: document.getElementById("email"),
+        message: "Please enter a valid email address."
+      },
+      message: {
+        element: document.getElementById("message"),
+        message: "Please enter at least 10 characters."
+      }
+    };
+
+    function showFieldError(fieldName, message) {
+      const errorElement = document.querySelector(
+        `[data-error-for="${fieldName}"]`
+      );
+
+      if (errorElement) {
+        errorElement.textContent = message;
+      }
+
+      fields[fieldName].element.setAttribute("aria-invalid", message ? "true" : "false");
+    }
+
+    function validateForm() {
+      let isValid = true;
+
+      const name = fields.name.element.value.trim();
+      const email = fields.email.element.value.trim();
+      const message = fields.message.element.value.trim();
+
+      if (name.length < 2) {
+        showFieldError("name", fields.name.message);
+        isValid = false;
+      } else {
+        showFieldError("name", "");
+      }
+
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+      if (!emailPattern.test(email)) {
+        showFieldError("email", fields.email.message);
+        isValid = false;
+      } else {
+        showFieldError("email", "");
+      }
+
+      if (message.length < 10) {
+        showFieldError("message", fields.message.message);
+        isValid = false;
+      } else {
+        showFieldError("message", "");
+      }
+
+      return isValid;
+    }
+
+    function showAlert(message, type) {
+      formAlert.textContent = message;
+      formAlert.className = `form-alert show ${type}`;
+    }
+
+    function setLoading(isLoading) {
+      submitButton.disabled = isLoading;
+      submitButton.classList.toggle("is-loading", isLoading);
+      submitButton.querySelector(".button-text").textContent = isLoading
+        ? "Sending..."
+        : "Send Message";
+    }
+
+    Object.values(fields).forEach(({ element }) => {
+      element.addEventListener("input", () => {
+        validateForm();
+        formAlert.className = "form-alert";
+        formAlert.textContent = "";
+      });
+    });
+
+    /*
+      Web3Forms integration.
+      Web3Forms forwards messages to the email configured for your access key.
+    */
+    contactForm.addEventListener("submit", async (event) => {
+      event.preventDefault();
+
+      formAlert.className = "form-alert";
+      formAlert.textContent = "";
+
+      if (!validateForm()) {
+        showAlert("Please correct the highlighted fields.", "error");
+        return;
+      }
+
+      const accessKey = contactForm.elements.access_key.value;
+
+      if (!accessKey || accessKey === "YOUR_WEB3FORMS_ACCESS_KEY") {
+        showAlert(
+          "Form setup is incomplete. Add your Web3Forms access key before deployment.",
+          "error"
+        );
+        return;
+      }
+
+      setLoading(true);
+
+      try {
+        const formData = new FormData(contactForm);
+        const object = Object.fromEntries(formData.entries());
+
+        const response = await fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json"
+          },
+          body: JSON.stringify(object)
+        });
+
+        const result = await response.json();
+
+        if (!response.ok || !result.success) {
+          throw new Error(result.message || "Unable to send your message.");
+        }
+
+        showAlert(
+          "Message sent successfully. Thank you for getting in touch!",
+          "success"
+        );
+
+        contactForm.reset();
+
+        Object.keys(fields).forEach((fieldName) => {
+          showFieldError(fieldName, "");
+        });
+      } catch (error) {
+        showAlert(
+          error.message ||
+            "Something went wrong. Please try again or email me directly.",
+          "error"
+        );
+      } finally {
+        setLoading(false);
+      }
+    });
+
+    /* Close menu when resizing back to desktop */
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 650) {
+        closeMobileMenu();
+      }
+    });
+  </script>
+</body>
+</html>
